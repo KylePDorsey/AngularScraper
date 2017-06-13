@@ -6,9 +6,6 @@ var cheerio = require('cheerio');
 var router = express.Router();
 var Item = require('./model/Item.model');
 
-// router.get('/test', function(req, res){
-// 	res.send('Hello from api/test');
-// })
 
 router.post('/scrape', function(req, res) {
 	var url = req.body.url;

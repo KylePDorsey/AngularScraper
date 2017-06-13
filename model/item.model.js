@@ -2,15 +2,19 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var ItemSchema = new Schema({
-	title: {
+	companyName: {
 		type: String,
 		require: true
 	},
-	description: {
+	jobTitle: {
 		type: String,
 		required: true
 	},
-	image: {
+	location: {
+		type: String,
+		required: true
+	},
+	summary: {
 		type: String,
 		required: true
 	},
@@ -19,5 +23,6 @@ var ItemSchema = new Schema({
 		default: Date.now
 	}
 });
-	
+
+console.log(ItemSchema);
 module.exports = mongoose.model('Item', ItemSchema);

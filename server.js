@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var routes = require('./routes');
 
-var port = 8080;
+var port = 8090;
 mongoose.connect('mongodb://localhost/AngularCrawler');
 
 var app = express();
